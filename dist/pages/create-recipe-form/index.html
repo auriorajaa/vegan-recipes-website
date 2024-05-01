@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JadiVegan - Recipe</title>
+    <title>JadiVegan - Create Recipe</title>
     <meta name="description"
         content="Let's join our vegan community now at jadivegan! Find and try our vegan recipe from our skilled chef" />
-    <link rel="stylesheet" href="../../output.css">
-    <link rel="stylesheet" href="../../../src/input.css">
-    <link rel="stylesheet" href="../../swiper-bundle.min.js" />
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/dist/swiper.bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="icon" href="../../../src/assets/images/logo.png" />
+    <link rel="icon" href="/src/assets/images/logo.png" />
 </head>
 
 <body>
     <!-- NAVBAR SECTION STARTED -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav class="bg-white border-gray-200">
+        <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="../../../src/assets/images/logo.png" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JadiVegan</span>
+                <img src="/src/assets/images/logo.png" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">JadiVegan</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -35,19 +35,18 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                     <li>
-                        <a href="../../index.html"
-                            class="navbar-list-active block py-2 px-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white "
+                        <a href="/dist/index.html" class="navbar-list block py-2 px-3 text-gray-900  rounded md:p-0"
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="../explore-page/index.html"
-                            class="navbar-list block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Explore</a>
+                        <a href="/dist/pages/explore-page/index.html"
+                            class="navbar-list block py-2 px-3 text-gray-900 rounded  md:p-0">Explore</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="navbar-list block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Create
+                        <a href="/dist/pages/create-recipe-form/index.html"
+                            class="navbar-list-active block py-2 px-3 text-gray-900 rounded md:p-0">Create
                             Recipes</a>
                     </li>
                 </ul>
@@ -79,7 +78,7 @@
                 <div class="max-w-full mt-10 flex flex-col">
                     <h1 class="text-5xl font-[mainFont] font-semibold">Recipe Details</h1>
                     <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Recipe
+                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Recipe
                             Title <span class="text-red-600">*</span></label>
                         <input type="text" name="name" id="name"
                             class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
@@ -87,7 +86,7 @@
                     </div>
 
                     <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Sub
+                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Sub
                             Heading (Optional)</label>
                         <input type="text" name="name" id="name"
                             class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
@@ -97,7 +96,7 @@
                     <div class="flex flex-col sm:flex-row max-w-screen-sm my-4 gap-3 font-[secondFont]">
                         <div class="mb-4 sm:mr-4">
                             <label for="servings"
-                                class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Number of Servings
+                                class="block mb-2 text-lg font-medium text-gray-900">Number of Servings
                                 <span class="text-red-600">*</span></label>
                             <input type="text" name="servings" id="servings"
                                 class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
@@ -105,7 +104,7 @@
                         </div>
                         <div>
                             <label for="name"
-                                class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Category
+                                class="block mb-2 text-lg font-medium text-gray-900">Category
                                 <span class="text-red-600">*</span></label>
 
                             <button id="dropdownSearchButton" data-dropdown-toggle="dropdownSearch"
@@ -120,52 +119,52 @@
 
                             <!-- Dropdown menu -->
                             <div id="dropdownSearch"
-                                class="z-10 hidden bg-white rounded-lg shadow w-60 dark:bg-gray-700">
-                                <ul class="h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700 dark:text-gray-200"
+                                class="z-10 hidden bg-white rounded-lg shadow w-60">
+                                <ul class="h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700"
                                     aria-labelledby="dropdownSearchButton">
                                     <li>
                                         <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
                                             <input id="checkbox-item-11" type="checkbox" value=""
                                                 class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
                                             <label for="checkbox-item-11"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Breakfast</label>
+                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Breakfast</label>
                                         </div>
                                     </li>
                                     <li>
                                         <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
                                             <input id="checkbox-item-12" type="checkbox" value=""
                                                 class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
                                             <label for="checkbox-item-12"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Brunch</label>
+                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Brunch</label>
                                         </div>
                                     </li>
                                     <li>
                                         <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
                                             <input id="checkbox-item-13" type="checkbox" value=""
                                                 class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
                                             <label for="checkbox-item-13"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Lunch</label>
+                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Lunch</label>
                                         </div>
                                     </li>
                                     <li>
                                         <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
                                             <input id="checkbox-item-14" type="checkbox" value=""
                                                 class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
                                             <label for="checkbox-item-14"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Dinner</label>
+                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Dinner</label>
                                         </div>
                                     </li>
                                     <li>
                                         <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
                                             <input id="checkbox-item-15" type="checkbox" value=""
                                                 class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
                                             <label for="checkbox-item-15"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded dark:text-gray-300">Snacks</label>
+                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Snacks</label>
                                         </div>
                                     </li>
                                 </ul>
@@ -176,10 +175,10 @@
 
                     <div class="sm:col-span-2 my-4 font-[secondFont]">
                         <label for="message"
-                            class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Ingredients <span
+                            class="block mb-2 text-lg font-medium text-gray-900">Ingredients <span
                                 class="text-red-600">*</span></label>
                         <textarea id="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
                             placeholder="2 tablespoons olive oil
 2 carrots, diced"></textarea>
                         <p class="text-xs font-light italic">Please put each ingredient and its measurement on its own
@@ -189,10 +188,10 @@
 
                     <div class="sm:col-span-2 my-4 font-[secondFont]">
                         <label for="message"
-                            class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Instructions <span
+                            class="block mb-2 text-lg font-medium text-gray-900">Instructions <span
                                 class="text-red-600">*</span></label>
                         <textarea id="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
                             placeholder="Heat olive oil in a large pot
 Add minced garlic and cook for another minute until fragrant"></textarea>
                         <p class="text-xs font-light italic">Please put each instruction/step on its own
@@ -201,10 +200,10 @@ Add minced garlic and cook for another minute until fragrant"></textarea>
                     </div>
 
                     <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="message" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Tips
+                        <label for="message" class="block mb-2 text-lg font-medium text-gray-900">Tips
                             (Optional)</label>
                         <textarea id="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
                             placeholder="Customize the soup by adding spinach or mushrooms
 Serve the soup with a crusty bread"></textarea>
                         <p class="text-xs font-light italic">Please put each tips on its own
@@ -213,22 +212,22 @@ Serve the soup with a crusty bread"></textarea>
                     </div>
 
                     <div class="sm:col-span-2  my-4 font-[secondFont]">
-                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Upload
+                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Upload
                             the photo of the dish <span class="text-red-600">*</span></label>
 
                         <div class="flex items-center justify-center w-full">
                             <label for="dropzone-file"
-                                class="flex flex-col items-center justify-center w-full h-64 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                                class="flex flex-col items-center justify-center w-full h-64 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
                                 <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                                    <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    <svg class="w-8 h-8 mb-4 text-gray-500" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2"
                                             d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
                                     </svg>
-                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                    <p class="mb-2 text-sm text-gray-500"><span
                                             class="font-semibold">Click to upload</span> or drag and drop</p>
-                                    <p class="text-xs text-gray-500 dark:text-gray-400">PNG, JPG or GIF (MAX 10MB)</p>
+                                    <p class="text-xs text-gray-500">PNG, JPG or GIF (MAX 10MB)</p>
                                 </div>
                                 <input id="dropzone-file" type="file" class="hidden" />
                             </label>
@@ -252,9 +251,9 @@ Serve the soup with a crusty bread"></textarea>
                                             alt="">
                                     </div>
                                 </div>
-                                <ul class="mt-3 text-left text-gray-500 dark:text-gray-400">
+                                <ul class="mt-3 text-left text-gray-500">
                                     <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-500"
+                                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
                                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                             viewBox="0 0 16 12">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -263,7 +262,7 @@ Serve the soup with a crusty bread"></textarea>
                                         <span>Landscape (horizontal) photos</span>
                                     </li>
                                     <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-500"
+                                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
                                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                             viewBox="0 0 16 12">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -277,7 +276,7 @@ Serve the soup with a crusty bread"></textarea>
 
                             <div class="donts-section">
                                 <h4 class="text-red-500 font-bold text-lg mt-8">Dont's</h4>
-                                <ul class="mt-3 space-y-1 text-left text-gray-500 dark:text-gray-400">
+                                <ul class="mt-3 space-y-1 text-left text-gray-500">
                                     <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
                                         <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
                                         <span>No portrait (vertical) photos</span>
@@ -303,43 +302,43 @@ Serve the soup with a crusty bread"></textarea>
                     </div>
 
                     <div class="sm:col-span-2 my-2 font-[secondFont]">
-                        <label for="name" class="block mb-4 text-lg font-medium text-gray-900 dark:text-white">Recipe
+                        <label for="name" class="block mb-4 text-lg font-medium text-gray-900">Recipe
                             credit</label>
                         <form class=" mx-auto">
                             <div class="grid md:grid-cols-2 md:gap-6">
                                 <div class="relative z-0 w-full mb-5 group">
                                     <input type="text" name="floating_first_name" id="floating_first_name"
-                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                         placeholder=" " required />
                                     <label for="floating_first_name"
-                                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                                        class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
                                         name</label>
                                 </div>
                                 <div class="relative z-0 w-full mb-5 group">
                                     <input type="text" name="floating_last_name" id="floating_last_name"
-                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                         placeholder=" " required />
                                     <label for="floating_last_name"
-                                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
+                                        class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
                                         name</label>
                                 </div>
                             </div>
                             <div class="relative z-0 w-full mb-5 group">
                                 <input type="email" name="floating_email" id="floating_email"
-                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_email"
-                                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
                                     address</label>
                             </div>
 
 
                             <div class="relative z-0 w-full mb-5 group">
                                 <input type="email" name="floating_email" id="floating_email"
-                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                     placeholder=" " required />
                                 <label for="floating_email"
-                                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Occupation
+                                    class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Occupation
                                     <span class="italic">(ex: Kitchen Mom's)</span></label>
                             </div>
                             <div class="inline-flex items-center justify-center w-full">
@@ -355,9 +354,9 @@ Serve the soup with a crusty bread"></textarea>
                                 </div>
                                 <div class="ms-2 text-sm">
                                     <label for="helper-checkbox"
-                                        class="font-medium text-gray-900 dark:text-gray-300">Send as anonymous</label>
+                                        class="font-medium text-gray-900">Send as anonymous</label>
                                     <p id="helper-checkbox-text"
-                                        class="text-xs font-normal text-gray-500 dark:text-gray-300">Your information
+                                        class="text-xs font-normal text-gray-500">Your information
                                         will be displayed as anonymous (You don't need to fill the recipe credit form)
                                     </p>
                                 </div>

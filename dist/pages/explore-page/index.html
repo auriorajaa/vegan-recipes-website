@@ -4,28 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JadiVegan - Recipe</title>
+    <title>JadiVegan - Explore</title>
     <meta name="description"
         content="Let's join our vegan community now at jadivegan! Find and try our vegan recipe from our skilled chef" />
-    <link rel="stylesheet" href="../../output.css">
-    <link rel="stylesheet" href="../../../src/input.css">
-    <link rel="stylesheet" href="../../swiper-bundle.min.js" />
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/dist/swiper.bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="../../../src/assets/images/logo.png" />
+    <link rel="icon" href="/src/assets/images/logo.png" />
+    <link rel="stylesheet" href="/dist/pages/explore-page/style.css">
 </head>
 
 <body>
     <!-- NAVBAR SECTION STARTED -->
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav class="bg-white border-gray-200">
+        <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="../../../src/assets/images/logo.png" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JadiVegan</span>
+                <img src="/src/assets/images/logo.png" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap">JadiVegan</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -36,19 +36,18 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                     <li>
-                        <a href="../../index.html"
-                            class="navbar-list-active block py-2 px-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white "
+                        <a href="/dist/index.html" class="navbar-list block py-2 px-3 text-gray-900  rounded md:p-0"
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="index.html"
-                            class="navbar-list block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Explore</a>
+                        <a href="/dist/pages/explore-page/index.html"
+                            class="navbar-list-active block py-2 px-3 text-gray-900 rounded  md:p-0">Explore</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="navbar-list block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Create
+                        <a href="/dist/pages/create-recipe-form/index.html"
+                            class="navbar-list block py-2 px-3 text-gray-900 rounded md:p-0">Create
                             Recipes</a>
                     </li>
                 </ul>
@@ -57,24 +56,24 @@
     </nav>
     <!-- NAVBAR SECTION ENDED -->
 
-
+    <!-- FILTER SECTION STARTED -->
     <div class="flex flex-col max-w-screen-xl mx-auto ">
         <section class="bg-white 0">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 
                 <h1 class="mb-4 font-[mainFont] text-6xl font-bold">
                     Try and cook vegan menu by yourself</h1>
-                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48">
                     Explore all the possibilities of vegan menu from other people</p>
                 <div class="4">
 
                     <form class="max-w-md mx-auto">
                         <label for="default-search"
-                            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 20 20">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                                 </svg>
@@ -119,24 +118,26 @@
         <div class="max-w-screen-xl p-3 mx-auto flex flex-row sm:flex-col">
             <div class="container grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
                 <div class="itemBox breakfast flex">
-                    <div
-                        class="card-recipe bg-white border rounded-md hover:scale-105 transition-all transform duration-500">
-                        <img class="custom-image w-full object-cover rounded-t-md"
-                            src="https://images.pexels.com/photos/1893563/pexels-photo-1893563.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="" />
-                        <div class="mt-2 pl-2 py-2 font-[secondFont]">
-                            <h1 class="text-lg font-bold ">Tomato Soup</h1>
-                            <div class="mt-4 mb-2 flex justify-between">
-                                <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
-                                    <button class="block text-sm font-normal cursor-auto underline">
-                                        Read more
-                                    </button>
+                    <a href="/dist/pages/recipe-detail/index.html">
+                        <div
+                            class="card-recipe bg-white border rounded-md hover:scale-105 transition-all transform duration-500">
+                            <img class="custom-image w-full object-cover rounded-t-md"
+                                src="https://images.pexels.com/photos/1893563/pexels-photo-1893563.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="" />
+                            <div class="mt-2 pl-2 py-2 font-[secondFont]">
+                                <h1 class="text-lg font-bold ">Tomato Soup</h1>
+                                <div class="mt-4 mb-2 flex justify-between">
+                                    <div class="flex-col">
+                                        <h1 class="font-normal text-md mb-2">Tomato soup, classic comfort with rich
+                                            flavors...</h1>
+                                        <button class="block text-sm font-normal cursor-auto underline">
+                                            Read more
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="itemBox breakfast flex">
                     <div
@@ -148,8 +149,8 @@
                             <h1 class="text-lg font-bold ">Veggie Spaghetti</h1>
                             <div class="mt-4 mb-2 flex justify-between">
                                 <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
+                                    <h1 class="font-normal text-md mb-2">Veggie spaghetti, nutritious twist on Italian
+                                        classic...</h1>
                                     <button class="block text-sm font-normal cursor-auto underline">
                                         Read more
                                     </button>
@@ -168,8 +169,8 @@
                             <h1 class="text-lg font-bold ">Peanuts Paprika</h1>
                             <div class="mt-4 mb-2 flex justify-between">
                                 <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
+                                    <h1 class="font-normal text-md mb-2">Peanuts paprika, crunchy snack with zesty
+                                        kick...</h1>
                                     <button class="block text-sm font-normal cursor-auto underline">
                                         Read more
                                     </button>
@@ -188,8 +189,8 @@
                             <h1 class="text-lg font-bold ">Sliced Cucumber </h1>
                             <div class="mt-4 mb-2 flex justify-between">
                                 <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
+                                    <h1 class="font-normal text-md mb-2">Sliced cucumber, fresh and crisp salad
+                                        addition...</h1>
                                     <button class="block text-sm font-normal cursor-auto underline">
                                         Read more
                                     </button>
@@ -208,8 +209,8 @@
                             <h1 class="text-lg font-bold ">Veggie Spaghetti</h1>
                             <div class="mt-4 mb-2 flex justify-between">
                                 <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
+                                    <h1 class="font-normal text-md mb-2">Veggie spaghetti, wholesome Italian favorite
+                                        revamped...</h1>
                                     <button class="block text-sm font-normal cursor-auto underline">
                                         Read more
                                     </button>
@@ -228,8 +229,8 @@
                             <h1 class="text-lg font-bold ">Vegie Sliced</h1>
                             <div class="mt-4 mb-2 flex justify-between">
                                 <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
+                                    <h1 class="font-normal text-md mb-2">Vegie sliced, fresh and flavorful salad
+                                        medley...</h1>
                                     <button class="block text-sm font-normal cursor-auto underline">
                                         Read more
                                     </button>
@@ -248,8 +249,8 @@
                             <h1 class="text-lg font-bold ">Basil & Avocado</h1>
                             <div class="mt-4 mb-2 flex justify-between">
                                 <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
+                                    <h1 class="font-normal text-md mb-2">Basil & avocado, salty but creamy green
+                                        goodness...</h1>
                                     <button class="block text-sm font-normal cursor-auto underline">
                                         Read more
                                     </button>
@@ -268,8 +269,8 @@
                             <h1 class="text-lg font-bold ">Chinese Dish</h1>
                             <div class="mt-4 mb-2 flex justify-between">
                                 <div class="flex-col">
-                                    <h1 class="font-normal text-md mb-2">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit...</h1>
+                                    <h1 class="font-normal text-md mb-2">Chinese dish, flavorful fusion with aromatic
+                                        spices...</h1>
                                     <button class="block text-sm font-normal cursor-auto underline">
                                         Read more
                                     </button>
@@ -281,6 +282,7 @@
             </div>
         </div>
     </div>
+    <!-- FILTER SECTION ENDED -->
 
     <br>
     <br>
