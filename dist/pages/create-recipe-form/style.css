@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-create-recipe {
+    border-color: #35B14F !important;
+}
+

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: mainFont;
+  src: url(assets/font/DancingScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: secondFont;
+  src: url(assets/font/Poppins/Poppins-Regular.ttf);
+}
+
+.top-recipe {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.navbar-list-active {
+  color: #35B14F !important;
+}
+
+.navbar-list:hover {
+  color: #35B14F !important;
+}
+
+.get-started-btn {
+  background-color: #35B14F !important;
+}
+
+.get-started-btn:hover {
+  background-color: #35b150dc !important;
+}
+
+nav {
+  font-family: secondFont;
+}
+
+.material-release {
+  color: #35B14F !important;
+}
+
+.card-recipe {
+  min-height: 21rem !important;
+}

@@ -1,0 +1,26 @@
+.btn {
+  /* Lebar tetap untuk tombol */
+  width: 100px; /* Sesuaikan dengan kebutuhan */
+  /* Tinggi tetap untuk tombol */
+  height: 40px; /* Sesuaikan dengan kebutuhan */
+  /* Penyesuaian lainnya */
+  /* Sesuaikan warna, padding, border, dll. sesuai kebutuhan */
+}
+
+/* Style tambahan untuk saat tombol aktif */
+.list.active {
+  /* Ganti warna latar belakang dan teks saat tombol aktif */
+  background-color: #207b34; /* Warna latar belakang */
+  color: white; /* Warna teks */
+}
+
+/* Focus effect */
+.list:focus {
+  /* Ganti warna cincin saat fokus */
+  outline: none; /* Hilangkan outline default */
+  box-shadow: 0 0 0 3px rgba(53, 177, 79, 0.5); /* Tambahkan cincin dengan warna hijau */
+}
+
+.card-recipe {
+  min-height: 21rem !important;
+}
