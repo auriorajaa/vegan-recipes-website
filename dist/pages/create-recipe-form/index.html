@@ -77,234 +77,179 @@
 
                 <div class="max-w-full mt-10 flex flex-col">
                     <h1 class="text-5xl font-[mainFont] font-semibold">Recipe Details</h1>
-                    <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Recipe
-                            Title <span class="text-red-600">*</span></label>
-                        <input type="text" name="name" id="name"
-                            class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-                            placeholder="Type recipe title" required="">
-                    </div>
-
-                    <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Sub
-                            Heading (Optional)</label>
-                        <input type="text" name="name" id="name"
-                            class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-                            placeholder="How to create a..." required="">
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row max-w-screen-sm my-4 gap-3 font-[secondFont]">
-                        <div class="mb-4 sm:mr-4">
-                            <label for="servings"
-                                class="block mb-2 text-lg font-medium text-gray-900">Number of Servings
-                                <span class="text-red-600">*</span></label>
-                            <input type="text" name="servings" id="servings"
+                    <form id="recipeForm" class="mx-auto">
+                        <div class="sm:col-span-2 my-4 font-[secondFont]">
+                            <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Recipe
+                                Title <span class="text-red-600">*</span></label>
+                            <input type="text" name="name" id="name"
                                 class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
-                                placeholder="Number of Servings" required="">
+                                placeholder="Type recipe title" required="">
                         </div>
-                        <div>
-                            <label for="name"
-                                class="block mb-2 text-lg font-medium text-gray-900">Category
-                                <span class="text-red-600">*</span></label>
 
-                            <button id="dropdownSearchButton" data-dropdown-toggle="dropdownSearch"
-                                data-dropdown-placement="bottom"
-                                class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
-                                type="button">Select category <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg>
-                            </button>
+                        <div class="sm:col-span-2 my-4 font-[secondFont]">
+                            <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Sub
+                                Heading (Optional)</label>
+                            <input type="text" name="name" id="name"
+                                class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+                                placeholder="How to create a...">
+                        </div>
 
-                            <!-- Dropdown menu -->
-                            <div id="dropdownSearch"
-                                class="z-10 hidden bg-white rounded-lg shadow w-60">
-                                <ul class="h-48 px-3 pb-3 overflow-y-auto text-sm text-gray-700"
-                                    aria-labelledby="dropdownSearchButton">
-                                    <li>
-                                        <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
-                                            <input id="checkbox-item-11" type="checkbox" value=""
-                                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
-                                            <label for="checkbox-item-11"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Breakfast</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
-                                            <input id="checkbox-item-12" type="checkbox" value=""
-                                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
-                                            <label for="checkbox-item-12"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Brunch</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
-                                            <input id="checkbox-item-13" type="checkbox" value=""
-                                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
-                                            <label for="checkbox-item-13"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Lunch</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
-                                            <input id="checkbox-item-14" type="checkbox" value=""
-                                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
-                                            <label for="checkbox-item-14"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Dinner</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div
-                                            class="flex items-center ps-2 rounded hover:bg-gray-100">
-                                            <input id="checkbox-item-15" type="checkbox" value=""
-                                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500  focus:ring-2 ">
-                                            <label for="checkbox-item-15"
-                                                class="w-full py-2 ms-2 text-sm font-medium text-gray-900 rounded">Snacks</label>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <div class="flex flex-col sm:flex-row max-w-screen-sm my-4 gap-3 font-[secondFont]">
+                            <div class="mb-4 sm:mr-4">
+                                <label for="servings" class="block mb-2 text-lg font-medium text-gray-900">Number of
+                                    Servings
+                                    <span class="text-red-600">*</span></label>
+                                <input type="number" name="servings" id="servings"
+                                    class="form-create-recipe bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+                                    placeholder="Number of Servings" required="" min="1">
                             </div>
-
+                            <div>
+                                <label for="category" class="block mb-2 text-lg font-medium text-gray-900">Category
+                                    <span class="text-red-600">*</span></label>
+                                <select id="category" required
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5">
+                                    <option selected="">Select category</option>
+                                    <option value="Breakfast">Breakfast</option>
+                                    <option value="Brunch">Brunch</option>
+                                    <option value="Lunch">Lunch</option>
+                                    <option value="Dinner">Dinner</option>
+                                    <option value="Snacks">Snacks</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="message"
-                            class="block mb-2 text-lg font-medium text-gray-900">Ingredients <span
-                                class="text-red-600">*</span></label>
-                        <textarea id="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
-                            placeholder="2 tablespoons olive oil
+                        <div class="sm:col-span-2 my-4 font-[secondFont]">
+                            <label for="message" class="block mb-2 text-lg font-medium text-gray-900">Ingredients <span
+                                    class="text-red-600">*</span></label>
+                            <textarea id="message" rows="4" required
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
+                                placeholder="2 tablespoons olive oil
 2 carrots, diced"></textarea>
-                        <p class="text-xs font-light italic">Please put each ingredient and its measurement on its own
-                            line.
-                        </p>
-                    </div>
+                            <p class="text-xs font-light italic">Please put each ingredient and its measurement on its
+                                own
+                                line.
+                            </p>
+                        </div>
 
-                    <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="message"
-                            class="block mb-2 text-lg font-medium text-gray-900">Instructions <span
-                                class="text-red-600">*</span></label>
-                        <textarea id="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
-                            placeholder="Heat olive oil in a large pot
+                        <div class="sm:col-span-2 my-4 font-[secondFont]">
+                            <label for="message" class="block mb-2 text-lg font-medium text-gray-900">Instructions <span
+                                    class="text-red-600">*</span></label>
+                            <textarea id="message" rows="4" required
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
+                                placeholder="Heat olive oil in a large pot
 Add minced garlic and cook for another minute until fragrant"></textarea>
-                        <p class="text-xs font-light italic">Please put each instruction/step on its own
-                            line.
-                        </p>
-                    </div>
+                            <p class="text-xs font-light italic">Please put each instruction/step on its own
+                                line.
+                            </p>
+                        </div>
 
-                    <div class="sm:col-span-2 my-4 font-[secondFont]">
-                        <label for="message" class="block mb-2 text-lg font-medium text-gray-900">Tips
-                            (Optional)</label>
-                        <textarea id="message" rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
-                            placeholder="Customize the soup by adding spinach or mushrooms
+                        <div class="sm:col-span-2 my-4 font-[secondFont]">
+                            <label for="message" class="block mb-2 text-lg font-medium text-gray-900">Tips
+                                (Optional)</label>
+                            <textarea id="message" rows="4"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-md border border-gray-300 focus:ring-green-500 focus:border-green-500"
+                                placeholder="Customize the soup by adding spinach or mushrooms
 Serve the soup with a crusty bread"></textarea>
-                        <p class="text-xs font-light italic">Please put each tips on its own
-                            line.
-                        </p>
-                    </div>
-
-                    <div class="sm:col-span-2  my-4 font-[secondFont]">
-                        <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Upload
-                            the photo of the dish <span class="text-red-600">*</span></label>
-
-                        <div class="flex items-center justify-center w-full">
-                            <label for="dropzone-file"
-                                class="flex flex-col items-center justify-center w-full h-64 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
-                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
-                                    <svg class="w-8 h-8 mb-4 text-gray-500" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
-                                    </svg>
-                                    <p class="mb-2 text-sm text-gray-500"><span
-                                            class="font-semibold">Click to upload</span> or drag and drop</p>
-                                    <p class="text-xs text-gray-500">PNG, JPG or GIF (MAX 10MB)</p>
-                                </div>
-                                <input id="dropzone-file" type="file" class="hidden" />
-                            </label>
+                            <p class="text-xs font-light italic">Please put each tips on its own
+                                line.
+                            </p>
                         </div>
 
-                        <div class="sm:col-span-2 p-3 my-6 bg-gray-50 border-gray-300 border rounded-lg">
-                            <h1 class="text-lg font-bold">Photo Guidelines</h1>
-                            <p class="text-sm font-light">Please follow these guidelines when uploading a photo. Your
-                                recipe may be rejected if
-                                your photo does not meet the guidelines.</p>
+                        <div class="sm:col-span-2  my-4 font-[secondFont]">
+                            <label for="name" class="block mb-2 text-lg font-medium text-gray-900">Upload
+                                the photo of the dish <span class="text-red-600">*</span></label>
 
-                            <div class="do-section">
-                                <h4 class="text-green-500 font-bold text-lg mt-5">Do's</h4>
-                                <div class="flex flex-row gap-4 mt-4">
-                                    <div class="max-w-sm ">
-                                        <img src="https://images.pexels.com/photos/4062498/pexels-photo-4062498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                    </div>
-                                    <div class="max-w-sm ">
-                                        <img src="https://images.pexels.com/photos/3026019/pexels-photo-3026019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1   "
-                                            alt="">
-                                    </div>
-                                </div>
-                                <ul class="mt-3 text-left text-gray-500">
-                                    <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
-                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 16 12">
+                            <div class="flex items-center justify-center w-full">
+                                <label for="dropzone-file"
+                                    class="flex flex-col items-center justify-center w-full h-64 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
+                                    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                        <svg class="w-8 h-8 mb-4 text-gray-500" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                                stroke-width="2"
+                                                d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
                                         </svg>
-                                        <span>Landscape (horizontal) photos</span>
-                                    </li>
-                                    <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500"
-                                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 16 12">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
-                                        </svg>
-                                        <span>Photos including your dish</span>
-                                    </li>
-
-                                </ul>
+                                        <p class="mb-2 text-sm text-gray-500"><span class="font-semibold">Click to
+                                                upload</span> or drag and drop</p>
+                                        <p class="text-xs text-gray-500">PNG, JPG or GIF (MAX 10MB)</p>
+                                    </div>
+                                    <input id="dropzone-file" type="file" class="hidden" />
+                                </label>
                             </div>
 
-                            <div class="donts-section">
-                                <h4 class="text-red-500 font-bold text-lg mt-8">Dont's</h4>
-                                <ul class="mt-3 space-y-1 text-left text-gray-500">
-                                    <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
-                                        <span>No portrait (vertical) photos</span>
-                                    </li>
-                                    <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
-                                        <span>No people or pets in your photo</span>
-                                    </li>
-                                    <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
-                                        <span>No personal information (name, age, etc.)</span>
-                                    </li>
-                                    <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
-                                        <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
-                                        <span>No content that violates our <span
-                                                class="underline cursor-pointer italic items-center">User
-                                                Agreement <ion-icon name="open-outline"
-                                                    class="ml-1"></ion-icon></span></span>
-                                    </li>
-                                </ul>
+                            <div class="sm:col-span-2 p-3 my-6 bg-gray-50 border-gray-300 border rounded-lg">
+                                <h1 class="text-lg font-bold">Photo Guidelines</h1>
+                                <p class="text-sm font-light">Please follow these guidelines when uploading a photo.
+                                    Your
+                                    recipe may be rejected if
+                                    your photo does not meet the guidelines.</p>
+
+                                <div class="do-section">
+                                    <h4 class="text-green-500 font-bold text-lg mt-5">Do's</h4>
+                                    <div class="flex flex-row gap-4 mt-4">
+                                        <div class="max-w-sm ">
+                                            <img src="https://images.pexels.com/photos/4062498/pexels-photo-4062498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="">
+                                        </div>
+                                        <div class="max-w-sm ">
+                                            <img src="https://images.pexels.com/photos/3026019/pexels-photo-3026019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1   "
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <ul class="mt-3 text-left text-gray-500">
+                                        <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M1 5.917 5.724 10.5 15 1.5" />
+                                            </svg>
+                                            <span>Landscape (horizontal) photos</span>
+                                        </li>
+                                        <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
+                                            <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M1 5.917 5.724 10.5 15 1.5" />
+                                            </svg>
+                                            <span>Photos including your dish</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="donts-section">
+                                    <h4 class="text-red-500 font-bold text-lg mt-8">Dont's</h4>
+                                    <ul class="mt-3 space-y-1 text-left text-gray-500">
+                                        <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
+                                            <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
+                                            <span>No portrait (vertical) photos</span>
+                                        </li>
+                                        <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
+                                            <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
+                                            <span>No people or pets in your photo</span>
+                                        </li>
+                                        <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
+                                            <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
+                                            <span>No personal information (name, age, etc.)</span>
+                                        </li>
+                                        <li class="flex items-center text-sm space-x-3 rtl:space-x-reverse">
+                                            <ion-icon name="alert-circle" class="text-red-500 text-lg"></ion-icon>
+                                            <span>No content that violates our <span
+                                                    class="underline cursor-pointer italic items-center">User
+                                                    Agreement <ion-icon name="open-outline"
+                                                        class="ml-1"></ion-icon></span></span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="sm:col-span-2 my-2 font-[secondFont]">
-                        <label for="name" class="block mb-4 text-lg font-medium text-gray-900">Recipe
-                            credit</label>
-                        <form class=" mx-auto">
+                        <div class="sm:col-span-2 my-2 font-[secondFont]">
+                            <label for="name" class="block mb-4 text-lg font-medium text-gray-900">Recipe
+                                credit</label>
+
                             <div class="grid md:grid-cols-2 md:gap-6">
                                 <div class="relative z-0 w-full mb-5 group">
                                     <input type="text" name="floating_first_name" id="floating_first_name"
@@ -325,8 +270,9 @@ Serve the soup with a crusty bread"></textarea>
                             </div>
                             <div class="relative z-0 w-full mb-5 group">
                                 <input type="email" name="floating_email" id="floating_email"
+                                    title="Must be a valid email address"
                                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
-                                    placeholder=" " required />
+                                    placeholder="" required pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,}" />
                                 <label for="floating_email"
                                     class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
                                     address</label>
@@ -334,14 +280,14 @@ Serve the soup with a crusty bread"></textarea>
 
 
                             <div class="relative z-0 w-full mb-5 group">
-                                <input type="email" name="floating_email" id="floating_email"
+                                <input type="text" name="floating_occupation" id="floating_occupation"
                                     class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                                     placeholder=" " required />
-                                <label for="floating_email"
+                                <label for="floating_occupation"
                                     class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Occupation
                                     <span class="italic">(ex: Kitchen Mom's)</span></label>
                             </div>
-                            <div class="inline-flex items-center justify-center w-full">
+                            <!-- <div class="inline-flex items-center justify-center w-full">
                                 <span class="absolute px-3 font-medium text-gray-900 ">or</span>
                                 <hr>
                             </div>
@@ -353,23 +299,62 @@ Serve the soup with a crusty bread"></textarea>
                                         class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 focus:ring-2">
                                 </div>
                                 <div class="ms-2 text-sm">
-                                    <label for="helper-checkbox"
-                                        class="font-medium text-gray-900">Send as anonymous</label>
-                                    <p id="helper-checkbox-text"
-                                        class="text-xs font-normal text-gray-500">Your information
+                                    <label for="helper-checkbox" class="font-medium text-gray-900">Send as
+                                        anonymous</label>
+                                    <p id="helper-checkbox-text" class="text-xs font-normal text-gray-500">Your
+                                        information
                                         will be displayed as anonymous (You don't need to fill the recipe credit form)
                                     </p>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <button type="submit"
                                 class="text-white mt-8 bg-green-600 hover:bg-green-300 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
-                        </form>
 
+                    </form>
+
+                    <!-- Modal -->
+                    <div id="confirmModal" class="hidden fixed z-10 inset-0 overflow-y-auto">
+                        <div
+                            class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                            <!-- Background overlay -->
+                            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+                            </div>
+
+                            <!-- Modal content -->
+                            <div
+                                class="inline-block align-bottom bg-gray-50 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                                <!-- Modal header -->
+                                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row sm:justify-between">
+                                    <h3 class="text-lg font-medium text-gray-900">Confirm Submission</h3>
+                                    <button id="closeModal"
+                                        class="text-gray-400 bg-gray-50 hover:text-gray-500 focus:outline-none focus:text-gray-500 sm:mt-0">
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="px-4 py-6 sm:px-6">
+                                    <p class="text-sm bg-gray-50 text-gray-700">Are you sure you want to submit this
+                                        recipe?</p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse gap-3">
+                                    <button id="confirmSubmit" type="button"
+                                        class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm">
+                                        Submit
+                                    </button>
+                                    <button id="cancelSubmit" type="button"
+                                        class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:w-auto sm:text-sm">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
     <!-- SUBMIT RECIPE SECTION ENDED -->
@@ -470,6 +455,7 @@ Serve the soup with a crusty bread"></textarea>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <script src="../../swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>

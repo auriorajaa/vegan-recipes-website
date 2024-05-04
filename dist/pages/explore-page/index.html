@@ -375,24 +375,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.list').click(function () {
-                const value = $(this).attr('data-filter');
-
-                if (value == 'All') {
-                    $('.itemBox').show('1000')
-                } else {
-                    $('.itemBox').hide(); // Sembunyikan semua itemBox terlebih dahulu
-                    $('.itemBox.' + value).show('1000'); // Tampilkan hanya itemBox dengan kelas yang sesuai
-                }
-
-                $(this).addClass('active').siblings().removeClass('active');
-            })
-        })
-    </script>
-
-
     <!-- IONICONS JAVASCRIPT STARTED -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
